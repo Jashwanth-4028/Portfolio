@@ -46,7 +46,7 @@ const PersonalInfo = mongoose.model("PersonalInfo", personalInfoSchema, "persona
 // ===== Routes =====
 
 // Get all projects
-app.get("/project/all-projects", async (req, res) => {
+app.get("/api/all-projects", async (req, res) => {
   try {
     const allProjects = await Project.find().sort({ createdAt: -1 });
     res.json({ allProjects });
