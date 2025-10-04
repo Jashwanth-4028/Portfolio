@@ -37,6 +37,7 @@ const HeroSection = ({ scrollToSection }) => {
                                         src={personalInfo.image}
                                         alt={personalInfo.name || "Profile Picture"}
                                         className="w-96 mx-auto"
+                                        loading="lazy"
                                     />
                                 </div>
 

@@ -16,7 +16,7 @@
     const fetchData = async () => {
         setProjectsLoading(true);
         try {
-        const res = await axios.get(`${baseURL}/project/all-projects`);
+        const res = await axios.get(`${baseURL}/api/all-projects`);
         setProjects(res.data.allProjects);
         } catch (err) {
         console.error(err);
