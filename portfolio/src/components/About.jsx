@@ -95,11 +95,14 @@ const About = () => {
               </div>
             </div>
           ) : (
-            <div className="flex justify-center items-center h-96">
-              <p className="text-red-600 text-lg font-medium">
-                Error fetching about details. Please try again later.
-              </p>
-            </div>
+            ) : (
+  <div className="flex justify-center items-center h-96">
+    <p className="text-gray-500 text-lg">
+      Waking up server… please wait ⏳
+    </p>
+  </div>
+)
+
           )}
         </div>
       </section>
