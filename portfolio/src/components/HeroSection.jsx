@@ -133,7 +133,7 @@ const HeroSection = ({ scrollToSection }) => {
             ) : (
                 <div className="flex justify-center items-center h-96">
                     <p className="text-red-600 text-lg font-medium">
-                        Error fetching personal details. Please try again later.
+                        Waking up server… please wait ⏳
                     </p>
                 </div>
             )}
